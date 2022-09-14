@@ -1,0 +1,41 @@
+table {
+  background-color: #f4c95d;
+}
+
+.activeLink {
+  background-color: rgb(255, 157, 0);
+}
+
+.inactiveLink {
+  background-color: #f4c95d;
+}
+
+.App {
+  &__tabs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    border: 2px dashed black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px black;
+
+    transition: transform .2s;
+
+     &:hover {
+      color: black;
+      border: 2px solid black;
+     }
+
+     &:active {
+      transform: translateX(5px);
+      box-shadow: none;
+     }
+  }
+}
